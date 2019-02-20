@@ -7,6 +7,8 @@ description = "A static analysis tool for Rust, based on Abstract Interpretation
 repository = "https://github.com/facebookexperimental/MIRAI"
 readme = "README.md"
 license = "MIT"
+links = "z3"
+build = "src/build.rs"
 edition = "2018"
 
 [lib]
@@ -32,3 +34,4 @@ serde = "*"
 serde_derive = "*"
 sled = "*"
 tempdir = "*"
+z3-sys = "0.4.0"

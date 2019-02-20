@@ -14,4 +14,4 @@ time cargo build
 cargo uninstall mirai || true
 cargo install --debug --path .
 cargo clean -p mirai
-time RUSTC_WRAPPER=mirai RUST_BACKTRACE=1 cargo build
+time  DYLD_LIBRARY_PATH=./z3/build RUSTC_WRAPPER=mirai RUST_BACKTRACE=1 cargo build

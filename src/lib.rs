@@ -28,6 +28,8 @@ extern crate syntax_pos;
 
 extern crate bincode;
 #[macro_use]
+extern crate lazy_static;
+#[macro_use]
 extern crate log;
 //#[macro_use]
 extern crate rpds;
@@ -35,6 +37,7 @@ extern crate sled;
 #[macro_use]
 extern crate serde_derive;
 extern crate serde;
+extern crate z3_sys;
 
 pub mod abstract_domains;
 pub mod abstract_value;
@@ -48,3 +51,4 @@ pub mod smt_solver;
 pub mod summaries;
 pub mod utils;
 pub mod visitors;
+pub mod z3_solver;

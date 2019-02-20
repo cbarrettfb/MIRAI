@@ -22,6 +22,12 @@ before_script:
 script:
 # Exit immediately if a command exits with a non-zero status.
 - set -e
+# Build z3
+- cd z3
+- python scripts/mk_make.py
+- cd build
+- make
+- cd ../..
 # Run format checks
 - cargo fmt --all -- --check
 # Run lint checks
